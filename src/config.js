@@ -6,8 +6,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "HeadBallz Attitude & Sass";
+const description = "ReLil BallZ of Fun on Polygon Chain";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
@@ -15,13 +15,14 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 5,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Backgrounds" },
+      { name: "Body and Hands" },
+      { name: "Face Make Up" },
+      { name: "Hair" },
+      { name: "Hats" },
+      { name: "Mouths" },
+      { name: "Shoes" },
+      { name: "Sunglasses" },
     ],
   },
 ];
@@ -31,25 +32,25 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 3000,
+  height: 3000,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://jojohombreave.com", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = "YOUR API KEY HERE";
+const AUTH = "efa47ea6-36e0-4eff-9b64-fbafed98cf5d;
 const LIMIT = 2; // Your API key rate limit
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'HeadBallZ Divas & Divos';
+const CONTRACT_SYMBOL = 'HB';
 const CONTRACT_TYPE = 'erc721';
 const MINT_TO_ADDRESS = 'YOUR WALLET ADDRESS HERE';
 const CHAIN = 'rinkeby';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
 // ** OPTIONAL **
